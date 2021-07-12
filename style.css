@@ -124,7 +124,7 @@ hr{
     height: 117px;
     margin-right: 16px;
 }
-.blog-title{}
+
 .blog-title h3{
     width: 164px;
     height: 68px;
@@ -217,3 +217,97 @@ hr{
     font-size: 13px;
     color: red;
 }
+
+
+/* --------------------------------
+    Media Quari Resposive Css
+    ------------------------------ */
+
+
+
+   
+    @media only screen and (max-device-width : 688px) {
+        /* Styles */
+         .container{
+            max-width: 100%;
+        }
+        .main-header{
+            background-color: #562EFF;
+            height: auto;
+            
+            
+        }
+        menu{
+            flex-direction: column;
+        }
+        .header-top{
+            
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .pleyers{
+            
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .player{
+            flex-direction: column;
+            align-items: center;
+        }
+        .blogs{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .blog{
+            flex-direction: column;
+            align-items: center;
+        }
+        .courses{
+            flex-direction: column;
+        }
+    
+    
+    }
+    @media only screen and (min-device-width : 688px) and (max-device-width:992px) {
+        /* Styles */
+         .container{
+            max-width: 100%;
+        }
+        .main-header{
+            background-color: #562EFF;
+            height: auto;
+            
+        }
+        menu{
+            flex-direction: column;
+        }
+        .header-top{
+            
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .pleyers{
+            
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /* .player{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        } */
+        .blogs{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .blog{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .courses{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    
+    }
